@@ -1,0 +1,4 @@
+net-dns/avahi mdnsresponder-compat
+net-fs/autofs ldap
+net-fs/samba client
+sys-devel/gcc fortran

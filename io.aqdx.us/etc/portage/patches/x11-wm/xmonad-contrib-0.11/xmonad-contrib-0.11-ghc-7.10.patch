@@ -1,0 +1,63 @@
+diff -ru ./XMonad/Config/Bluetile.hs ./XMonad/Config/Bluetile.hs
+--- ./XMonad/Config/Bluetile.hs	2014-05-01 18:34:25.000000000 -0700
++++ ./XMonad/Config/Bluetile.hs	2015-04-01 15:14:28.822632612 -0700
+@@ -1,4 +1,5 @@
+ {-# OPTIONS -fno-warn-missing-signatures #-}
++{-# LANGUAGE FlexibleContexts #-}
+ ----------------------------------------------------------------------------
+ -- |
+ -- Module      :  XMonad.Config.Bluetile
+diff -ru ./XMonad/Hooks/DebugEvents.hs ./XMonad/Hooks/DebugEvents.hs
+--- ./XMonad/Hooks/DebugEvents.hs	2014-05-01 18:34:25.000000000 -0700
++++ ./XMonad/Hooks/DebugEvents.hs	2015-04-01 15:14:28.824632653 -0700
+@@ -30,6 +30,7 @@
+ 
+ -- import           Graphics.X11.Xlib.Extras.GetAtomName        (getAtomName)
+ 
++import           Control.Applicative
+ import           Control.Exception.Extensible         as E
+ import           Control.Monad.State
+ import           Control.Monad.Reader
+@@ -270,6 +271,7 @@
+ newtype Decoder a = Decoder (ReaderT Decode (StateT DecodeState X) a)
+ #ifndef __HADDOCK__
+     deriving (Functor
++             ,Applicative
+              ,Monad
+              ,MonadIO
+              ,MonadState  DecodeState
+diff -ru ./XMonad/Prompt.hs ./XMonad/Prompt.hs
+--- ./XMonad/Prompt.hs	2014-05-01 18:34:25.000000000 -0700
++++ ./XMonad/Prompt.hs	2015-04-01 15:14:28.834632855 -0700
+@@ -1,4 +1,5 @@
+ {-# LANGUAGE ExistentialQuantification #-}
++{-# LANGUAGE FlexibleContexts #-}
+ -----------------------------------------------------------------------------
+ -- |
+ -- Module      :  XMonad.Prompt
+diff -ru ./XMonad/Util/Invisible.hs ./XMonad/Util/Invisible.hs
+--- ./XMonad/Util/Invisible.hs	2014-05-01 18:34:25.000000000 -0700
++++ ./XMonad/Util/Invisible.hs	2015-04-01 15:14:28.835632876 -0700
+@@ -28,7 +28,9 @@
+ -- Invisible derives trivial definitions for Read and Show, so the wrapped data
+ -- type need not do so.
+ 
+-newtype Invisible m a = I (m a) deriving (Monad, Functor)
++import Control.Applicative (Applicative)
++
++newtype Invisible m a = I (m a) deriving (Monad, Applicative, Functor)
+ 
+ instance (Functor m, Monad m) => Read (Invisible m a) where
+     readsPrec _ s = [(fail "Read Invisible", s)]
+diff -ru ./xmonad-contrib.cabal ./xmonad-contrib.cabal
+--- ./xmonad-contrib.cabal	2014-05-01 18:34:25.000000000 -0700
++++ ./xmonad-contrib.cabal	2015-04-01 15:14:28.838632936 -0700
+@@ -21,7 +21,7 @@
+ license-file:       LICENSE
+ author:             Spencer Janssen & others
+ maintainer:         xmonad@haskell.org
+-extra-source-files: README scripts/generate-configs scripts/run-xmonad.sh
++extra-source-files: README.md scripts/generate-configs scripts/run-xmonad.sh
+                     scripts/window-properties.sh
+                     scripts/xinitrc scripts/xmonad-acpi.c
+                     scripts/xmonad-clock.c
