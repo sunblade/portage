@@ -1,3 +1,3 @@
 # portage #
 
-Some portage configurations different hosts.
+Portage configurations for different hosts.
