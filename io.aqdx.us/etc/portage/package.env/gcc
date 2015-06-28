@@ -30,6 +30,7 @@ sys-libs/efivar gcc-4.9.conf
 sys-libs/glibc gcc-4.9.conf
 x11-apps/setxkbmap gcc-4.9.conf
 x11-base/xorg-server gcc-4.9.conf
+x11-drivers/nvidia-drivers gcc-4.9.conf
 x11-drivers/xf86-video-intel gcc-4.9.conf
 x11-libs/cairo gcc-4.9.conf
 x11-misc/virtualgl gcc-4.9.conf
