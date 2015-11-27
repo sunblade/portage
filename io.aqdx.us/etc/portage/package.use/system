@@ -1,5 +1,2 @@
-dev-libs/boost -c++11
-dev-libs/icu -c++11
-dev-vcs/darcs -curl
+net-im/bitlbee twitter
 sys-kernel/gentoo-sources experimental
-x11-drivers/nvidia-drivers gtk3

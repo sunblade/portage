@@ -1,11 +1,7 @@
-app-crypt/gcr gtk
-app-crypt/heimdal -ssl
-app-editors/vim cscope
 app-emulation/spice client
 app-text/acroread -nsplugin
 dev-java/oracle-jdk-bin source
 mail-client/mutt gpg imap pop sasl sidebar smtp
-media-libs/chromaprint tools
 media-libs/libbluray java
 media-libs/libpng apng
 media-sound/abcde normalize
@@ -15,4 +11,7 @@ media-video/handbrake ffmpeg
 net-fs/samba client
 net-misc/rdesktop ao
 net-print/hplip scanner
-x11-misc/xmobar -alsa -wifi
+sys-devel/llvm lldb
+www-client/chromium custom-cflags
+www-client/firefox custom-cflags custom-optimization egl gstreamer
+x11-terms/rxvt-unicode 256-color alt-font-width fading-colors -vanilla
