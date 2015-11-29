@@ -1,0 +1,23 @@
+media-fonts/font-util array-bounds.conf
+x11-apps/appres array-bounds.conf
+x11-apps/iceauth array-bounds.conf
+x11-apps/luit array-bounds.conf
+x11-apps/mkfontscale array-bounds.conf
+x11-apps/sessreg array-bounds.conf
+x11-apps/xauth array-bounds.conf
+x11-apps/xdm array-bounds.conf
+x11-apps/xinit array-bounds.conf
+x11-apps/xkbcomp array-bounds.conf string-compare.conf
+x11-apps/xprop array-bounds.conf
+x11-apps/xrandr array-bounds.conf
+x11-apps/xrdb array-bounds.conf
+x11-apps/xset array-bounds.conf
+x11-apps/xwininfo array-bounds.conf
+x11-base/xorg-server array-bounds.conf
+x11-libs/libXaw array-bounds.conf
+x11-libs/libXfont array-bounds.conf
+x11-libs/libXft array-bounds.conf
+x11-libs/libXpm array-bounds.conf
+x11-libs/libXt array-bounds.conf
+x11-libs/libxkbcommon array-bounds.conf pointer-bool-conversion.conf
+x11-libs/libxkbfile array-bounds.conf
