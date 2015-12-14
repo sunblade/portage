@@ -1,5 +1,7 @@
+<=media-libs/gst-plugins-bad-1.6.1-r1 -gles2
 dev-libs/libpcre pcre16
 dev-python/pillow tiff truetype
+media-libs/gexiv2 introspection
 media-libs/libcanberra gtk
 net-dns/dnsmasq script
 net-misc/networkmanager -nss

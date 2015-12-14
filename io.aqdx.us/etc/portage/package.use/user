@@ -1,5 +1,6 @@
 app-emulation/spice client
 app-text/acroread -nsplugin
+dev-java/icedtea source
 dev-java/oracle-jdk-bin source
 mail-client/mutt gpg imap pop sasl sidebar smtp
 media-libs/libbluray java
