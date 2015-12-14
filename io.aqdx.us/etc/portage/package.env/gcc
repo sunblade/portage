@@ -2,6 +2,7 @@
 <=app-text/recode-3.6_p20-r1      gcc.conf
 <=dev-java/icedtea-7.2.5.5        gcc.conf
 <=dev-lang/spidermonkey-1.8.5-r4  gcc.conf
+<=dev-libs/crypto++-5.6.2-r2      gcc.conf # inline asm (no compile)
 <=dev-libs/elfutils-0.164         gcc.conf
 <=dev-util/perf-4.1.5-r1          gcc.conf
 <=media-libs/id3lib-3.8.3-r8      gcc.conf
@@ -23,4 +24,3 @@ sys-firmware/ipxe                 gcc.conf
 sys-firmware/sgabios              gcc.conf
 x11-drivers/nvidia-drivers        gcc.conf # bad binary
 x11-drivers/xf86-video-intel      gcc.conf # bad binary (crash)
-<=dev-libs/crypto++-5.6.2-r2      gcc.conf # inline asm (no compile)
