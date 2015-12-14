@@ -1,60 +1,58 @@
-app-crypt/mhash no-lto.conf
-app-text/poppler no-lto.conf
-app-text/texlive-core no-lto.conf
-dev-lang/ruby no-lto.conf
-dev-libs/confuse no-lto.conf
-dev-libs/crypto++ no-lto.conf
-dev-libs/dotconf no-lto.conf
-dev-libs/elfutils no-lto.conf
-dev-libs/eventlog no-lto.conf
-dev-libs/libaio no-lto.conf
-dev-libs/libbsd no-lto.conf
-dev-libs/libdaemon no-lto.conf
-dev-libs/libgcrypt no-lto.conf
-dev-libs/popt no-lto.conf
-dev-libs/pth no-lto.conf
-dev-libs/zziplib no-lto.conf
-dev-python/numpy no-lto.conf
-dev-python/pygobject no-lto.conf
-dev-qt/qtscript no-lto.conf
-dev-util/cmake no-lto.conf
-dev-util/systemtap no-lto.conf
-dev-util/valgrind no-lto.conf
-dev-vcs/cvs no-lto.conf
-media-libs/alsa-lib no-lto.conf
-media-libs/celt no-lto.conf
-media-libs/libid3tag no-lto.conf
-media-libs/libmp4v2 no-lto.conf
-media-libs/libmpeg2 no-lto.conf
-media-libs/libsndfile no-lto.conf
-media-libs/mesa no-lto.conf
-media-libs/x264 no-lto.conf
-media-video/ffmpeg no-lto.conf
-media-video/handbrake no-lto.conf
-media-video/nvidia-settings no-lto.conf
-net-fs/autofs no-lto.conf
-net-im/bitlbee no-lto.conf
-net-mail/mailutils no-lto.conf
-net-misc/tightvnc no-lto.conf
-net-nds/openldap no-lto.conf
-net-print/hplip no-lto.conf
-sci-libs/fftw no-lto.conf
-sys-apps/busybox no-lto.conf
-sys-apps/sandbox no-lto.conf
-sys-apps/util-linux no-lto.conf
-sys-devel/binutils no-lto.conf
-sys-devel/gettext no-lto.conf
-sys-fs/fuse no-lto.conf
-sys-fs/ntfs3g no-lto.conf
-sys-libs/binutils-libs no-lto.conf
-sys-libs/db no-lto.conf
-sys-libs/efivar no-lto.conf
-sys-process/numactl no-lto.conf
-www-client/chromium no-lto.conf
-www-client/firefox no-lto.conf
-x11-drivers/nvidia-drivers no-lto.conf
-x11-drivers/xf86-video-intel no-lto.conf
-x11-libs/cairo no-lto.conf
-x11-libs/libXxf86misc no-lto.conf
-x11-misc/imake no-lto.conf
-x11-wm/xmonad no-lto.conf
+<=app-crypt/gnupg-2.0.28                   no-lto.conf
+<=app-crypt/mhash-0.9.9.9-r1               no-lto.conf
+<=app-shells/zsh-5.1.1                     no-lto.conf # bad binary (crash)
+<=app-text/poppler-0.38.0                  no-lto.conf
+<=app-text/texlive-core-2015               no-lto.conf
+<=dev-lang/ruby-2.1.7-r1                   no-lto.conf # format error (no compile)
+<=dev-lang/spidermonkey-1.8.5-r4           no-lto.conf # undefined reference (no compile)
+<=dev-libs/confuse-2.7                     no-lto.conf
+<=dev-libs/dotconf-1.3                     no-lto.conf
+<=dev-libs/elfutils-0.164                  no-lto.conf
+<=dev-libs/eventlog-0.2.12                 no-lto.conf
+<=dev-libs/libaio-0.3.110                  no-lto.conf # undefined version (no compile)
+<=dev-libs/libbsd-0.8.0                    no-lto.conf # undefined version (no compile)
+<=dev-libs/libdaemon-0.14-r2               no-lto.conf
+<=dev-libs/libgcrypt-1.6.3-r5              no-lto.conf
+<=dev-libs/popt-1.16-r2                    no-lto.conf
+<=dev-libs/pth-2.0.7-r3                    no-lto.conf
+<=dev-libs/zziplib-0.13.62                 no-lto.conf
+<=dev-python/numpy-1.10.1-r1               no-lto.conf
+<=dev-python/pygobject-3.16.2              no-lto.conf
+<=dev-qt/qtscript-4.8.7                    no-lto.conf
+<=dev-util/systemtap-2.9                   no-lto.conf
+<=dev-util/valgrind-3.11.0                 no-lto.conf
+<=dev-vcs/cvs-1.12.12-r10                  no-lto.conf
+<=media-libs/alsa-lib-1.1.0                no-lto.conf
+<=media-libs/celt-0.11.1-r1                no-lto.conf # format error (no compile)
+<=media-libs/libass-0.13.1                 no-lto.conf # format error (no compile)
+<=media-libs/libid3tag-0.15.1b-r4          no-lto.conf
+<=media-libs/libmp4v2-2.0.0                no-lto.conf
+<=media-libs/libmpeg2-0.5.1-r2             no-lto.conf
+<=media-libs/mesa-11.0.6                   no-lto.conf
+<=media-video/ffmpeg-2.8.3                 no-lto.conf # relocation error (no compile)
+<=media-video/handbrake-0.10.2-r1          no-lto.conf # undefined reference (no compile)
+<=media-video/nvidia-settings-358.16       no-lto.conf
+<=net-fs/autofs-5.1.1                      no-lto.conf
+<=net-im/bitlbee-3.2.2                     no-lto.conf
+<=net-mail/mailutils-2.99.98               no-lto.conf
+<=net-misc/tightvnc-1.3.10-r2              no-lto.conf
+<=net-print/hplip-3.15.11                  no-lto.conf
+<=sci-libs/fftw-3.3.4                      no-lto.conf
+<=sys-apps/busybox-1.23.2                  no-lto.conf
+<=sys-apps/sandbox-2.9                     no-lto.conf
+<=sys-apps/util-linux-2.27.1               no-lto.conf
+<=sys-devel/binutils-2.25-r2               no-lto.conf
+<=sys-devel/gettext-0.19.6                 no-lto.conf
+<=sys-fs/fuse-2.9.4                        no-lto.conf
+<=sys-fs/ntfs3g-2015.3.14                  no-lto.conf
+<=sys-libs/binutils-libs-2.25.1-r2         no-lto.conf
+<=sys-libs/db-5.3.28-r3                    no-lto.conf # requires bfd (no compile)
+<=sys-libs/efivar-0.21                     no-lto.conf
+<=sys-process/numactl-2.0.10-r2            no-lto.conf
+<=www-client/chromium-48.0.2564.23         no-lto.conf
+<=www-client/firefox-42.0-r2               no-lto.conf # undefined reference (no compile)
+<=x11-drivers/xf86-video-intel-2.99.917-r2 no-lto.conf # bad binary (crash)
+<=x11-libs/cairo-1.14.4                    no-lto.conf
+<=x11-libs/libXxf86misc-1.0.3              no-lto.conf
+<=x11-misc/imake-1.0.7                     no-lto.conf
+<=x11-misc/synergy-1.7.5-r1                no-lto.conf

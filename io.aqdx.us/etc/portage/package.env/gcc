@@ -1,19 +1,26 @@
-dev-java/icedtea gcc.conf
-dev-libs/elfutils gcc.conf
-dev-libs/klibc gcc.conf
-dev-util/perf gcc.conf
-dev-util/systemtap gcc.conf
-media-libs/id3lib gcc.conf
-media-libs/mesa gcc.conf
-media-video/handbrake gcc.conf
-sys-apps/busybox gcc.conf
-sys-boot/efibootmgr gcc.conf
-sys-devel/dev86 gcc.conf
-sys-devel/gcc gcc.conf
-sys-firmware/ipxe gcc.conf
-sys-firmware/sgabios gcc.conf
-sys-libs/efivar gcc.conf
-sys-libs/glibc gcc.conf
-sys-process/numactl gcc.conf
-x11-drivers/nvidia-drivers gcc.conf
-x11-drivers/xf86-video-intel gcc.conf
+<=app-crypt/gnupg-2.0.28          gcc.conf
+<=app-text/recode-3.6_p20-r1      gcc.conf
+<=dev-java/icedtea-7.2.5.5        gcc.conf
+<=dev-lang/spidermonkey-1.8.5-r4  gcc.conf
+<=dev-libs/elfutils-0.164         gcc.conf
+<=dev-util/perf-4.1.5-r1          gcc.conf
+<=media-libs/id3lib-3.8.3-r8      gcc.conf
+<=media-libs/mesa-11.0.6          gcc.conf
+<=media-libs/virtualgl-2.4.1-r2   gcc.conf # undeclared symbol (no compile)
+<=media-video/handbrake-0.10.2-r1 gcc.conf
+<=sys-libs/db-5.3.28-r3           gcc.conf
+<=sys-libs/efivar-0.21            gcc.conf
+<=sys-libs/glibc-2.20-r2          gcc.conf # gcc extensions (no compile)
+<=sys-process/numactl-2.0.10-r2   gcc.conf
+dev-libs/klibc                    gcc.conf
+dev-util/cdecl                    gcc.conf
+dev-util/systemtap                gcc.conf
+sys-apps/busybox                  gcc.conf
+sys-boot/efibootmgr               gcc.conf
+sys-devel/dev86                   gcc.conf
+sys-devel/gcc                     gcc.conf
+sys-firmware/ipxe                 gcc.conf
+sys-firmware/sgabios              gcc.conf
+x11-drivers/nvidia-drivers        gcc.conf # bad binary
+x11-drivers/xf86-video-intel      gcc.conf # bad binary (crash)
+<=dev-libs/crypto++-5.6.2-r2      gcc.conf # inline asm (no compile)
