@@ -15,4 +15,4 @@ net-print/hplip scanner
 sys-devel/llvm lldb
 www-client/chromium custom-cflags
 www-client/firefox custom-cflags custom-optimization egl gstreamer
-x11-terms/rxvt-unicode 256-color alt-font-width fading-colors -vanilla
+x11-terms/rxvt-unicode 256-color alt-font-width fading-colors pixbuf -vanilla
